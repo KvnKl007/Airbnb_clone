@@ -121,4 +121,7 @@ help or help <command> Ex:
 - Amenity
 - Place
 - Review
+<<<<<<< HEAD
 
+=======
+>>>>>>> a04f6c2 (project readme file)
