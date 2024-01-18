@@ -33,7 +33,7 @@ class TestBaseModel(unittest.TestCase):
         self.assertIsInstance(my_model_str, str)
         self.assertIn("BaseModel", my_model_str)
         self.assertIn(my_model.id, my_model_str)
-        self.assertIn(my_model.__dict__, my_model_str)
+        self.assertIn(str(my_model.__dict__).str(my_model))
 
 
 if __name__ == "__main__":
