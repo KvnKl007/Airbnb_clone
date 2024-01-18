@@ -29,10 +29,8 @@ class TestBaseModel(unittest.TestCase):
 
     def test_str(self):
         my_model = BaseModel()
-        my_model_str = my_model.__str__()
-        self.assertIsInstance(my_model_str, str)
-        self.assertIn("BaseModel", my_model_str)
-        self.assertIn(my_model.id, my_model_str)
+        self.assertTrue(str(my_model).startswith("[BaseModel]"))
+        self.assertIn(my_model.id, str(my_model))
         self.assertIn(str(my_model.__dict__).str(my_model))
 
 
